@@ -1,7 +1,10 @@
 import React from 'react';
 
-/* Menu data hardcoded for now - can later be fetched from an API or database */
-
+/**
+ * Hardcoded menu data for now
+ * Each object represents a category (like Coffee or Pastries)
+ * and contains a list of menu items in that category.
+ */
 const menuData = [
     {
         category: 'Coffee',
@@ -28,9 +31,10 @@ const menuData = [
         ],
     },
 ];
-    /* Menu component that renders the categories and items */
+    /* Menu component - displays the full cafe menu with catefories and items */
     export default function Menu() {
         return (
+            // Centered container with max width for layout
             <div className="max-w-4xl mx-auto p-6">
                 <h2 className="text-4xl font-semibold text-rose-800 mb-8 text-center">Our Menu</h2>
 
