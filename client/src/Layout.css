@@ -1,0 +1,35 @@
+.layout {
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    height: 80px;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.nav {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}

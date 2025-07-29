@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Helveta Neue', sans-serif;
+    overflow: hidden;
+}
+
+/* Logo in top-left corner */
+.logo {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    height: 275px;
+    width: auto;
+    object-fit: contain;
+    z-index: 10;
+}
+
+/* Top-right nav */
+.nav {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Cafe image centered but pushed right slightly */
+.cafe-image {
+    position: absolute;
+    right: 0;       /* Hugs the right edge */
+    top: 50%;       /* Start from verticle middle */
+    transform: translateY(-50%);        /* Actually center it vertically */
+    width: 100%;     /* Adjust width based on your design */
+    max-width: 800px;
+    object-fit: contain;
+    z-index: 1;     /* Puts image behind nav and logo */
+}
+
+/* Bottom navbar */
+.bottom-nav {
+  position: fixed;           /* ← This is key */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fffaf8;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  z-index: 999;             /* Stays on top of images */
+}
+
+.bottom-nav:hover {
+    text-decoration: underline;
+}
